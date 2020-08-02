@@ -1,0 +1,7 @@
+docker run -it -p 3000:3000 CONTAINER_ID
+
+Need to use {} around pwd when using powershell for -v comand
+docker run -p 3000:3000 -v ${pwd}:/app 611d059ce50e
+
+Working Command for volumes with react
+docker run -it  -p 3000:3000 -v /app/node_modules -v ${pwd}:/app 611d059ce50e
